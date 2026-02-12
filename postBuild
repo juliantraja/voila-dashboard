@@ -1,2 +1,11 @@
 #!/bin/bash
-jupyter server extension enable voila --sys-prefix
+mkdir -p ~/.jupyter
+cat > ~/.jupyter/jupyter_server_config.json << 'EOF'
+{
+  "ServerApp": {
+    "jpserver_extensions": {
+      "voila": true
+    }
+  }
+}
+EOF
