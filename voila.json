@@ -1,0 +1,8 @@
+{
+  "VoilaConfiguration": {
+    "show_tracebacks": false
+  },
+  "TagRemovePreprocessor": {
+    "remove_cell_tags": ["hide"]
+  }
+}
