@@ -9,3 +9,12 @@ cat > ~/.jupyter/jupyter_server_config.json << 'EOF'
   }
 }
 EOF
+
+cat > ~/.jupyter/voila.json << 'EOF'
+{
+  "TagRemovePreprocessor": {
+    "enabled": true,
+    "remove_cell_tags": ["hide"]
+  }
+}
+EOF
